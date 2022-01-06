@@ -30,10 +30,10 @@ function Board() {
       // LEARN ABOUT REMAINDER OPERATOR. Here we are using the if funtion to make the computer understand to enter O when even and X when odd. For example if the number of click is 3 than the code will divide it by 2 (% 2) which which will give us a resily of
       // .something which means it is an odd number. if it does not returen .anything than it is an even number.
       if (newCount % 2 == 0) {
-        alert("The number is even.");
+        // alert("The number is even.");
         array[index] = "O";
       } else {
-        alert("the number is ODD");
+        // alert("the number is ODD");
         array[index] = "X";
       }
     }

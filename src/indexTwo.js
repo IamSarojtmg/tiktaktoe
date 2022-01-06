@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-const playerOne = "O";
-const playerTwo = "X";
+const playerOne = "X";
+const playerTwo = "O";
 
 function Board() {
   const [currentClickCount, setCurrentClickCount] = useState(0);
