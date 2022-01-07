@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
+// using setArray hooks instead of leaving _
 function Board() {
   const [clickCount, setClickCount] = useState(0);
 

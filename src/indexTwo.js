@@ -5,24 +5,23 @@ import "./index.css";
 const playerOne = "X";
 const playerTwo = "O";
 
+// it is not required to track click counts in this case
+// since we are checking if the clicked square is null
+// and keeping track of who the active player is ie. X || O
 function Board() {
-  const [currentClickCount, setCurrentClickCount] = useState(0);
   const [array, _] = useState(Array(9).fill(null));
 
   const [currentPlayer, setCurrentPlayer] = useState(playerOne);
 
   const onSquareClickedHandler = (index) => {
-    if (currentClickCount >= 9 || array[index] !== null) return;
+    if (array[index] !== null) return;
 
-    const newClickCount = currentClickCount + 1;
-    setCurrentClickCount(newClickCount);
-
-    if (newClickCount % 2 == 0) {
-      array[index] = playerTwo;
-      setCurrentPlayer(playerOne);
-    } else {
+    if (currentPlayer === playerOne) {
       array[index] = playerOne;
       setCurrentPlayer(playerTwo);
+    } else {
+      array[index] = playerTwo;
+      setCurrentPlayer(playerOne);
     }
   };
 
