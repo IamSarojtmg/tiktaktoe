@@ -39,6 +39,16 @@ function Board() {
     }
   };
 
+  const a = ["a", "b", "c"];
+  const b = ["e", "f", "g"];
+
+  const c = [a, b];
+
+  const d = [...a, ...b];
+
+  console.log("c =", c);
+  console.log("d", d);
+
   return (
     <div>
       {/*

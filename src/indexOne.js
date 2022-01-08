@@ -17,9 +17,15 @@ function Board() {
 
       if (newCount % 2 == 0) {
         // alert("The number is even.");
-        // array[index] = "O";
+        //array[index] = "O";
 
         // using setArray hooks
+        // ... is a spread syntax or .operator which will pull all the data of array which is the state used
+        // in the hook.
+        //Than the newArray depening on the index which is the number clicked even or odd
+        // will display either O or X.
+        // The setArray which manulplates the state will now take control of the newArray instead of the state(array)
+        //because it will be used to use the useffect hook which i will need to LEARN.
         const newArray = [...array];
         newArray[index] = "O";
         setArray(newArray);
@@ -34,6 +40,8 @@ function Board() {
       }
     }
   };
+
+  // []
 
   return (
     <div>
