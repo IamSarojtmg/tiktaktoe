@@ -12,8 +12,7 @@ import "./index.css";
 //   );
 // }
 
-
-// Here we are creating a function component called Board and using the useState hook. Then we added a constant variable and inside it added a 
+// Here we are creating a function component called Board and using the useState hook. Then we added a constant variable and inside it added a
 // [state and function].
 function Board() {
   const [clickCount, setClickCount] = useState(0);
@@ -25,7 +24,7 @@ function Board() {
 
   // (index) = The value of index is the number that is written in onIncreaseClickHandler(0).
   const onIncreaseClickHandler = (index) => {
-    // if the clickCount is less than 9 (true) and the array [index] is the position within the array. If there is nothing display null. 
+    // if the clickCount is less than 9 (true) and the array [index] is the position within the array. If there is nothing display null.
     //===(confirmed value). LEARN ABOUT ARRAY IN DETAILS!!!
     if (clickCount < 9 && array[index] === null) {
       // Here we created a new const var called newCount and assigned it the clickCount +1.
@@ -33,8 +32,8 @@ function Board() {
 
       setClickCount(newCount);
 
-      // LEARN ABOUT REMAINDER OPERATOR. Here we are using the if funtion to make the computer understand to enter O 
-      //when even and X when odd. For example if the number of click is 3 than the code will divide it by 2 (% 2) which which 
+      // LEARN ABOUT REMAINDER OPERATOR. Here we are using the if funtion to make the computer understand to enter O
+      //when even and X when odd. For example if the number of click is 3 than the code will divide it by 2 (% 2) which which
       //will give us a result of .something which means it is an odd number. if it does not return .anything than it is an even number.
       if (newCount % 2 == 0) {
         // alert("The number is even.");
@@ -148,3 +147,5 @@ function Board() {
 ReactDOM.render(<Board />, document.getElementById("root"));
 
 // is the page the main page that is given to by the HTML. So basicallay one page of the website.
+
+// className={`${styles.button} ${disabled && styles.disabled}`}

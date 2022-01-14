@@ -1,0 +1,97 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row {
+  clear: both;
+  content: "";
+  display: table;
+  margin-left: 750px;
+}
+
+.status {
+  width: 335px;
+  height: 113px;
+  left: 10px;
+  top: 10px;
+
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 112px;
+  color: #000000;
+  margin: 0px 10px;
+  margin-left: 750px;
+  margin-bottom: 250px;
+
+  /* blue rectangle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #75c2da;
+}
+
+.status1 {
+  width: 335px;
+  height: 113px;
+  left: 10px;
+  top: 10px;
+
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 112px;
+  color: #000000;
+  margin: 0px 10px;
+
+  margin-left: 750px;
+  margin-bottom: 250px;
+
+  /* red rectangle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #ff0303;
+}
+
+.square {
+  background: rgb(255, 255, 255);
+  border: 8px solid rgb(153, 153, 153);
+  float: right;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 95px;
+  height: 100px;
+  margin-right: -8px;
+  margin-top: -8px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
